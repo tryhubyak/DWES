@@ -7,21 +7,21 @@ include(__DIR__."/../../middleware/db.php");
 // Creamos el objeto Db
 $db = new Db();
 
-
 // ejecucion del codigo SQL para extraer los datos
-$sql = 'SELECT * FROM profesores';
+if (isset($_REQUEST['id'])){
+    $idProfesor = $_REQUEST['id'];
+    $sql = 'SELECT * FROM Profesores WHERE profesor_id=' . $idProfesor;
+}else{
+   $sql = 'SELECT * FROM Profesores';
+}
+
 $result = $db->executeQuery($sql);
 
 // tratamiento de los datos
 while ($data = $result->fetch_object()) {
-    $users[] = $data;
+    $users[] = $data->nombre_prof . " " . $data->apellido_prof;
 }
 
-// pintado de los datos
-foreach ($users as $user) {
-    echo "<br>";
-    echo $user->nombre . " " . $user->apellido;
-    echo "<br>";
-}
-
+header("Content-Type: application/json");
+echo json_encode($users);
 ?>

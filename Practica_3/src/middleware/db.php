@@ -22,8 +22,8 @@ class Db {
         );
 
         // comprobamos si la conexion se ha realizado correctamente
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
         }
     }
 
