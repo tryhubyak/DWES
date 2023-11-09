@@ -1,4 +1,9 @@
-<html>
-<h1>Bienvenido</h1>
-<h2>Si ves este mensaje has configurado el entorno para symfony correctamente</h2>
-</html>
+<?php
+
+use App\Kernel;
+
+require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
+
+return function (array $context) {
+    return new Kernel($context['APP_ENV'], (bool) $context['APP_DEBUG']);
+};
