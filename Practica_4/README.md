@@ -126,3 +126,7 @@ Nos tiene que quedar la siguiente estructura de carpetas como en la captura:
 ![Captura de pantalla 2023-11-08 125408](https://github.com/tryhubyak/DWES/assets/145651101/25e0918d-dd64-43d3-b08a-c9f133ab70c9)
 
 Con eso dariamos por finalizada la practica, los archivos que tengo subidos extra en carpeta symfony son de dia 8/11 de trabajo en clase.
+
+```
+DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
+```
