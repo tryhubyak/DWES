@@ -130,3 +130,4 @@ Con eso dariamos por finalizada la practica, los archivos que tengo subidos extr
 ```
 DATABASE_URL="mysql://root:secret@database:3306/symfony_docker?serverVersion=8.0"
 ```
+En el siguiente readme ya se explicaran los pasos de creacion de una API basica y que es lo que hace falta para ello 
