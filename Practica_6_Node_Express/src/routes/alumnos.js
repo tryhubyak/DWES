@@ -1,23 +1,10 @@
-const express = require("express");
-const app = express();
-
-const dotenv = require("dotenv");
-dotenv.config();
-
-//conexión con la base de datos
-const {connection} = require("../config.db");
-
-const getCarta = (request, response) => {
-    connection.query("SELECT * FROM alumnos",
-    (error, results) => {
-    if(error)
-    throw error;
-    response.status(200).json(results);
-    });
-};
-    
-//ruta
-app.route("/alumnos")
-.get(getCarta);
-
-module.exports = app;
+//nos ayuda a analizar el cuerpo de la solicitud POST
+//app.use(express.json());
+//app.use(express.urlencoded({extended: true}));
+//
+////cargamos el archivo de rutas
+//app.use(require('./routes/alumnos'));
+//app.listen(process.env.PORT||3300,() => {
+//console.log("Servidor corriendo en el puerto 3300");
+//});
+//module.exports = app;
