@@ -1,11 +1,7 @@
-const express = require("express");
-const app = express();
+const app = require("./app");
 
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+const PORT = process.env.PORT || 3300;
 
-app.use(require('./routes/carta'));
-app.listen(process.env.PORT||3300,() => {
-console.log("Servidor corriendo en el puerto 3300");
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
-module.exports = app;
