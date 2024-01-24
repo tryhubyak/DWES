@@ -1,5 +1,5 @@
-# DWES y DAW
-Repositorio para asignatura Desarrollo web entorno servidor y Despliegue de aplicaciones web de 2ºDAW. Hecha para subir proyectos, trabajos y practicas para dicha asignatura.
+# DWES
+Repositorio para asignatura Desarrollo web entorno servidor de 2ºDAW. Hecha para subir proyectos, trabajos y practicas para dicha asignatura.
 
 Cada pactica ira enumerada con su fecha de entrega correspondiente.
 
