@@ -1,0 +1,22 @@
+[
+    {
+        "foto": "../img/articulos/tour_bundle/bundle1.webp",
+        "nombre": "HOPE | WHITE HOODIE & CD",
+        "precio": 50.99
+    },
+    {
+        "foto": "../img/articulos/tour_bundle/bundle2.webp",
+        "nombre": "HOPE | BLACK SWEETSHIRT & CD",
+        "precio": 50.99
+    },
+    {
+        "foto": "../img/articulos/tour_bundle/bundle3.webp",
+        "nombre": "HOPE | BLACK T-SHIRT & CD",
+        "precio": 40.99
+    },
+    {
+        "foto": "../img/articulos/tour_bundle/bundle4.webp",
+        "nombre": "HOPE | BLACK DAD HAT & CD",
+        "precio": 35.99
+    }
+]

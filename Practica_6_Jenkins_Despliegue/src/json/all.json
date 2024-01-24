@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "foto": "../img/articulos/bottoms/bottom1.webp",
+        "nombre": "SWEETPANTS HOPE",
+        "precio": 30.00,
+        "categoria": "BOTTOMS"
+    },
+    {
+        "id": 2,
+        "foto": "../img/articulos/bottoms/bottom2.webp",
+        "nombre": "SWEETPANTS LOST SOUL",
+        "precio": 30.00,
+        "categoria": "BOTTOMS"
+    },
+    {
+        "id": 3, 
+        "foto": "../img/articulos/Discs/blackvinyl.webp",
+        "nombre": "BLACK VINYL HOPE",
+        "precio": 45.99,
+        "categoria": "CDs"
+    },
+    {
+        "id": 4,
+        "foto": "../img/articulos/Discs/whitevinyl.webp",
+        "nombre": "WHITE VINYL HOPE",
+        "precio": 59.99,
+        "categoria": "CDs"
+    },
+    {
+        "id": 5,
+        "foto": "../img/articulos/Discs/disc.webp",
+        "nombre": "CD HOPE",
+        "precio": 20.99,
+        "categoria": "CDs"
+    },
+    {
+        "id": 6,
+        "foto": "../img/articulos/Discs/signed.webp",
+        "nombre": "SIGNED CD HOPE",
+        "precio": 25.99,
+        "categoria": "CDs"
+    },
+    {
+        "id": 7,
+        "foto": "../img/articulos/hats/blackdadhatlogo.webp",
+        "nombre": "BLACK DAD HAT",
+        "precio": 25.99,
+        "categoria": "HATS"
+    },
+    {
+        "id": 8,
+        "foto": "../img/articulos/hats/browndadhatlogo.webp",
+        "nombre": "BROWN DAD HAT",
+        "precio": 25.99,
+        "categoria": "HATS"
+    },
+    {
+        "id": 9,
+        "foto": "../img/articulos/hats/creambeanie.webp",
+        "nombre": "CREAM BEANIE",
+        "precio": 20.99,
+        "categoria": "HATS"
+    },
+    {
+        "id": 10,
+        "foto": "../img/articulos/hats/graydadhat.webp",
+        "nombre": "GRAY DAD HAT",
+        "precio": 25.99,
+        "categoria": "HATS"
+    },
+    {
+        "id": 11,
+        "foto": "../img/articulos/hats/realdadhat.webp",
+        "nombre": "REAL DAD HAT",
+        "precio": 20.99,
+        "categoria": "HATS"
+    },
+    {
+        "id": 12,
+        "foto": "../img/articulos/hats/whitedadhat.webp",
+        "nombre": "WHITE DAD HAT",
+        "precio": 25.99,
+        "categoria": "HATS"
+    },
+    {
+        "id": 13,
+        "foto": "../img/articulos/tops/hopeLT.webp",
+        "nombre": "HOPE LONGSLEEVE",
+        "precio": 35.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 14,
+        "foto": "../img/articulos/tops/hopewhiteLT.webp",
+        "nombre": "WHITE HOPE LONGSLEEVE",
+        "precio": 45.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 15,
+        "foto": "../img/articulos/tops/logohoodie.webp",
+        "nombre": "NF HOODIE",
+        "precio": 30.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 16,
+        "foto": "../img/articulos/tops/lostS.webp",
+        "nombre": "LOST SWEETSHIRT",
+        "precio": 35.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 17,
+        "foto": "../img/articulos/tops/lostsoulhoodie.webp",
+        "nombre": "LOST SOUL HOODIE",
+        "precio": 45.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 18,
+        "foto": "../img/articulos/tops/lostsoulT.webp",
+        "nombre": "LOST SOUL T-SHIRT",
+        "precio": 25.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 19,
+        "foto": "../img/articulos/tops/runnningT.webp",
+        "nombre": "RUNNING T-SHIRT",
+        "precio": 25.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 20,
+        "foto": "../img/articulos/tops/succesLT.webp",
+        "nombre": "SUCCESS LONGSLEEVE",
+        "precio": 39.99,
+        "categoria": "TOPS"
+    },
+    {
+        "id": 21,
+        "foto": "../img/articulos/tour_bundle/bundle1.webp",
+        "nombre": "HOPE | WHITE HOODIE & CD",
+        "precio": 50.99,
+        "categoria": "TOUR_BUNDLE"
+    },
+    {
+        "id": 22,
+        "foto": "../img/articulos/tour_bundle/bundle2.webp",
+        "nombre": "HOPE | BLACK SWEETSHIRT & CD",
+        "precio": 50.99,
+        "categoria": "TOUR_BUNDLE"
+    },
+    {
+        "id": 23,
+        "foto": "../img/articulos/tour_bundle/bundle3.webp",
+        "nombre": "HOPE | BLACK T-SHIRT & CD",
+        "precio": 50.99,
+        "categoria": "TOUR_BUNDLE"
+    },
+    {
+        "id": 24,
+        "foto": "../img/articulos/tour_bundle/bundle4.webp",
+        "nombre": "HOPE | BLACK DAD HAT & CD",
+        "precio": 50.99,
+        "categoria": "TOUR_BUNDLE"
+    }
+  ]
