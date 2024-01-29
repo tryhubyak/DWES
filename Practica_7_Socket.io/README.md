@@ -34,17 +34,19 @@ Modificamos archivo app.js segun nuestras necesodades, en este caso he creado un
 
 Podemos observar como ya los mensajes llegan al servidor en la consola.
 
-## Ejercicio 3
+## Ejercicio 3 y 4
 En este ejercicio lo que hay que implementar es que al meterse a localhost:3000 te pida que introduzcas un usuario y solo despues de eso puedes mandar mensajes, el html es el mismo que en el ejercicio anterior y lo que cambiaria seria el JS, la respuesta de la web es la siguiente:
 
 ![image](https://github.com/tryhubyak/DWES/assets/145651101/3c3759eb-80e5-4d97-9972-d5fd18bb8181)
 
 ![image](https://github.com/tryhubyak/DWES/assets/145651101/3369b3de-e994-453a-9540-0f77bbdd4eb4)
 
+### Ejercicio 4
 Se cada vez que te metes en localhost:3000 es como meterse en un chat nuevo que te pide tu usuario, y como podemos ver aqui hay ejemplo de varios usuarios conectados, con posibilidad de mandar mensajes y que aparece cuando de desconectan
 ![image](https://github.com/tryhubyak/DWES/assets/145651101/b7a3ce0a-6e6d-48e5-a321-5582a9915022)
 
+## Ejercicio 5
+Aqui se implementa la funcion de mensajeria privada y aparte modifico el diseño para hacelo mas atractivo ya que hemos implementado todas las funcionalidades que se pedian.
 
-## Ejercicio 4
 
 
