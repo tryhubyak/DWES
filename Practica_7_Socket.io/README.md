@@ -41,6 +41,10 @@ En este ejercicio lo que hay que implementar es que al meterse a localhost:3000 
 
 ![image](https://github.com/tryhubyak/DWES/assets/145651101/3369b3de-e994-453a-9540-0f77bbdd4eb4)
 
+Se cada vez que te metes en localhost:3000 es como meterse en un chat nuevo que te pide tu usuario, y como podemos ver aqui hay ejemplo de varios usuarios conectados, con posibilidad de mandar mensajes y que aparece cuando de desconectan
+![image](https://github.com/tryhubyak/DWES/assets/145651101/b7a3ce0a-6e6d-48e5-a321-5582a9915022)
+
+
 ## Ejercicio 4
 
 
