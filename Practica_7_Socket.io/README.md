@@ -48,5 +48,8 @@ Se cada vez que te metes en localhost:3000 es como meterse en un chat nuevo que 
 ## Ejercicio 5
 Aqui se implementa la funcion de mensajeria privada y aparte modifico el diseño para hacelo mas atractivo ya que hemos implementado todas las funcionalidades que se pedian.
 
+![image](https://github.com/tryhubyak/DWES/assets/145651101/abcf08a7-feb4-46df-bb55-000d6cb1a455)
 
+## 31/01/24
+Trabajo realizado por Veronika Tryhubyak para 2º DAW asignatura de desarrollo web entorno servidor
 
