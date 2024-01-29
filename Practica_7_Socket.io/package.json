@@ -1,6 +1,7 @@
 {
   "name": "practica_7_socket.io",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {

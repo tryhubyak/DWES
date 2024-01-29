@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat socket</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      #messages,
+      #userList,
+      #privateMessages {
+        list-style-type: none;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      #messages {
+        max-height: 200px;
+        overflow-y: auto;
+      }
+
+      #form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      input,
+      button {
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button#toggle-btn {
+        background-color: #dc3545;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="userList"></div>
+    <div id="privateMessages"></div>
+    <form id="form" action="">
+      <input
+        id="username"
+        type="text"
+        autocomplete="off"
+        placeholder="Username"
+        autofocus
+      />
+      <input id="room" autocomplete="off" placeholder="Room" />
+      <input id="recipient" autocomplete="off" placeholder="To" />
+      <input id="input" autocomplete="off" placeholder="Message" />
+      <button type="submit">Send</button>
+      <button id="toggle-btn">Disconnect</button>
+    </form>
+    <ul id="messages"></ul>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const socket = io();
+        const form = document.getElementById("form");
+        const input = document.getElementById("input");
+        const messages = document.getElementById("messages");
+        const userList = document.getElementById("userList");
+        const privateMessages = document.getElementById("privateMessages");
+        const toggleButton = document.getElementById("toggle-btn");
+
+        let username = "";
+        let joinedUsers = new Set();
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          username = document.getElementById("username").value;
+          const room = document.getElementById("room").value;
+          const recipient = document.getElementById("recipient").value;
+          const privateMessage = document.getElementById("input").value;
+
+          if (input.value && username && room) {
+            socket.emit("join room", { room, username });
+            if (recipient && privateMessage) {
+              socket.emit("private message", {
+                room,
+                recipient,
+                message: privateMessage,
+                username: username,
+              });
+            } else {
+              socket.emit("chat message", {
+                room,
+                username,
+                message: input.value,
+              });
+            }
+            input.value = "";
+          }
+        });
+
+        toggleButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (socket.connected) {
+            toggleButton.innerText = "Connect";
+            socket.disconnect();
+          } else {
+            toggleButton.innerText = "Disconnect";
+            socket.connect();
+          }
+        });
+
+        socket.on("chat message", (data) => {
+          const item = document.createElement("li");
+          item.textContent = `${data.username}: ${data.message}`;
+          messages.appendChild(item);
+          window.scrollTo(0, document.body.scrollHeight);
+        });
+
+        socket.on("user joined", (data) => {
+          if (!joinedUsers.has(data.username)) {
+            const joinedItem = document.createElement("p");
+            joinedItem.textContent = `Usuario ${data.username} se unió a la sala: ${data.room}`;
+            privateMessages.appendChild(joinedItem);
+            joinedUsers.add(data.username);
+          }
+        });
+
+        socket.on("user left", (data) => {
+          const leftItem = document.createElement("p");
+          leftItem.textContent = `Usuario ${data.username} abandonó la sala: ${data.room}`;
+          privateMessages.appendChild(leftItem);
+        });
+
+        socket.on("connected users", (usernames) => {
+          userList.innerHTML = `<p>Usuarios en la sala: ${usernames.join(
+            ", "
+          )}</p>`;
+        });
+
+        socket.on("private message", (data) => {
+          const privateMessageItem = document.createElement("p");
+          privateMessageItem.textContent = `${data.username} (privado): ${data.message}`;
+          privateMessages.appendChild(privateMessageItem);
+        });
+      });
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>
